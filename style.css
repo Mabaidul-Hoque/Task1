@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid gray;
+}
+.founder_conatiner,
+.vp_conatiner,
+.developers_conatiner,
+.sales_conatiner,
+.marketing_conatiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+.developers_conatiner {
+  width: 75%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+/* HEADER */
+header {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+header h1,
+#leadership_team h3,
+#development_team h3,
+#sales_marketing_team h3 {
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(214, 109, 218);
+}
+#leadership_team h3,
+#development_team h3,
+#sales_marketing_team h3 {
+  margin-bottom: 40px;
+}
+header p {
+  width: 83%;
+  margin: 0 auto;
+}
+.divider {
+  border: 1px dashed rgb(214, 109, 218);
+  width: 50%;
+  margin: 30px auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+/* PROFILE */
+.profile img {
+  margin-bottom: 15px;
+}
+.profile p {
+  margin-bottom: 5px;
+}
+/* ICON */
+.icon_conatiner {
+  display: flex;
+  justify-content: flex-end;
+}
+.icon,
+.icon_beside_sales {
+  width: 4rem;
+  height: 2.5rem;
+  background-color: rgb(214, 109, 218);
+  clip-path: polygon(100% 1%, 0 0, 30% 43%, 0 100%, 99% 100%);
+}
+#sales_marketing_team {
+  position: relative;
+}
+.icon_beside_sales {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.icon_before_Development_team,
+.icon_footer {
+  width: 4rem;
+  height: 2.5rem;
+  background-color: rgb(214, 109, 218);
+  clip-path: polygon(0 0, 100% 0, 65% 41%, 100% 100%, 0 100%);
+}
+#development_team {
+  position: relative;
+}
+.icon_before_Development_team {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
