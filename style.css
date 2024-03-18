@@ -8,7 +8,7 @@ body {
   text-align: center;
   width: 60%;
   margin: 0 auto;
-  border: 1px solid gray;
+  /* border: 1px solid rgb(180, 179, 179); */
 }
 .founder_conatiner,
 .vp_conatiner,
@@ -18,6 +18,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 20px;
 }
@@ -104,4 +105,28 @@ main {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@media screen and (min-width: 300px) {
+  body {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .icon_beside_sales,
+  .icon_before_Development_team {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header p {
+    max-width: 50vw;
+  }
+  .divider {
+    width: 30%;
+  }
+  .developers_conatiner {
+    max-width: 50%;
+    margin: 0 auto;
+  }
 }
